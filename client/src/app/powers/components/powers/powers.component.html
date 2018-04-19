@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let power of powers">
+    <a [routerLink]="['./edit', power.id]" [textContent]="power.name"></a>
+  </li>
+</ul>

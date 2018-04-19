@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <button mat-raised-button
+    routerLink="/dashboard"
+    routerLinkActive #rlaDashboard="routerLinkActive"
+    [class.mat-primary]="rlaDashboard.isActive"
+    [class.mat-accent]="!rlaDashboard.isActive">
+    Dashboard
+  </button>
+  <button mat-raised-button
+    routerLink="/heroes"
+    routerLinkActive #rlaHeroes="routerLinkActive"
+    [class.mat-primary]="rlaHeroes.isActive"
+    [class.mat-accent]="!rlaHeroes.isActive">
+    Heroes
+  </button>
+  <button mat-raised-button
+    routerLink="/powers"
+    routerLinkActive #rlaPowers="routerLinkActive"
+    [class.mat-primary]="rlaPowers.isActive"
+    [class.mat-accent]="!rlaPowers.isActive">
+    Powers
+  </button>
+</div>

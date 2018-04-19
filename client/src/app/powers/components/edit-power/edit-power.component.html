@@ -1,0 +1,9 @@
+<form [formGroup]="form">
+  <mat-form-field>
+    <label>
+      Name:
+      <input matInput formControlName="name">
+    </label>
+  </mat-form-field>
+  <button mat-button color="primary" (click)="submit()">Save</button>
+</form>
